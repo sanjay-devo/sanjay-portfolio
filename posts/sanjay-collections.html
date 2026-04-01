@@ -1,0 +1,1030 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sanjay Collections - Photo Gallery of Sanjay Kumar Vaishya</title>
+<meta name="description" content="A premium photo gallery showcasing the best moments of Sanjay Kumar Vaishya in personal, lifestyle, and professional scenes.">
+<meta name="keywords" content="Sanjay Kumar Vaishya photos, photo gallery, India Cyber Cafe, personal branding, lifestyle photography, professional portraits">
+<meta property="og:title" content="Sanjay Collections - Photo Gallery of Sanjay Kumar Vaishya">
+<meta property="og:description" content="Discover the curated photo collection of Sanjay Kumar Vaishya from life, work, and travel.">
+<meta property="og:image" content="https://sanjay.indiacybercafe.com/uploads/sanjay/sanjay%20kumar%20vaishya%20hero%20image.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://indiacybercafe.com/wp-content/uploads/2026/03/sanjay_siteicon.png"/>
+<link rel="apple-touch-icon" href="https://indiacybercafe.com/wp-content/uploads/2026/03/sanjay_siteicon.png"/>
+
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #050816;
+  --surface: rgba(15, 23, 42, 0.88);
+  --surface-strong: rgba(255, 255, 255, 0.08);
+  --border: rgba(148, 163, 184, 0.18);
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #7c3aed;
+  --accent-soft: #8b5cf6;
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.32);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Theme toggle */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(148, 163, 184, 0.35);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 999px;
+  left: 2px;
+  bottom: 2px;
+  z-index: 2;
+  background-color: #ffffff;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.18);
+}
+
+.sun svg,
+.moon svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.sun svg {
+  top: 6px;
+  left: 36px;
+  opacity: 0.75;
+}
+
+.moon svg {
+  top: 6px;
+  left: 6px;
+  opacity: 0.75;
+  fill: #facc15;
+}
+
+.switch:hover .sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+.switch:hover .moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.input:checked + .slider {
+  background-color: rgba(59, 130, 246, 0.9);
+}
+
+.input:focus + .slider {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.input:checked + .slider:before {
+  transform: translateX(30px);
+  background-color: #f8fafc;
+}
+
+html.light .slider {
+  background-color: rgba(148, 163, 184, 0.25);
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+html.light .input:checked + .slider {
+  background-color: rgba(59, 130, 246, 0.9);
+}
+
+html.light .slider:before {
+  background-color: #ffffff;
+}
+
+html.light body {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+html.light .card {
+  background: rgba(255, 255, 255, 0.94) !important;
+  box-shadow: 0 24px 80px rgba(148, 163, 184, 0.15) !important;
+}
+html.light .photo-card {
+  background: rgba(255, 255, 255, 0.96) !important;
+  box-shadow: 0 24px 80px rgba(148, 163, 184, 0.12) !important;
+  border: 1px solid rgba(148, 163, 184, 0.3) !important;
+}
+html.light .photo-meta,
+html.light .photo-title,
+html.light .photo-desc,
+html.light .photo-tag {
+  color: #0f172a !important;
+}
+html.light .photo-tag {
+  background: rgba(59, 130, 246, 0.12) !important;
+  color: #1d4ed8 !important;
+}
+
+html.light .content,
+html.light h1,
+html.light h2,
+html.light h3,
+html.light p,
+html.light li,
+html.light a {
+  color: #0f172a !important;
+}
+
+html.light a {
+  color: #1d4ed8 !important;
+  text-decoration: underline !important;
+}
+
+html.light .faq-question {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+html.light .faq-item.active .faq-question {
+  background: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+html.light .faq-answer {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+html.dark body {
+  background: radial-gradient(circle at top, #0b132b, #020617) !important;
+  color: #e2e8f0 !important;
+}
+
+html.dark .card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5) !important;
+}
+
+html.dark .content,
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark p,
+html.dark li,
+html.dark a {
+  color: #cbd5f5 !important;
+}
+
+html.dark a {
+  color: #60a5fa !important;
+  text-decoration: none !important;
+}
+
+.theme-toggle-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  min-height: 56px;
+  padding: 0;
+}
+
+.header-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 0;
+  min-height: 56px;
+}
+
+.header-row > .back-button,
+.header-row > .theme-toggle-wrapper {
+  min-height: 56px;
+}
+
+.header-row .back-button {
+  margin-bottom: 0;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  min-width: 0;
+  width: auto;
+  max-width: 100%;
+}
+
+.theme-toggle-wrapper {
+  width: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #17223b 0%, #050816 48%, #02040b 100%);
+  color: var(--text);
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.18), transparent 24%),
+              radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.12), transparent 24%),
+              radial-gradient(circle at 50% 120%, rgba(168, 85, 247, 0.14), transparent 20%);
+  pointer-events: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: min(1200px, 100% - 32px);
+  margin: 0 auto;
+  padding: 40px 0 80px;
+  position: relative;
+  z-index: 1;
+}
+.page-title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  max-width: 780px;
+  margin-bottom: 18px;
+  background: linear-gradient(90deg, #8b5cf6, #60a5fa);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.page-subtitle {
+  max-width: 760px;
+  color: var(--muted);
+  line-height: 1.9;
+  font-size: 1.05rem;
+  margin-bottom: 36px;
+}
+.summary-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(15, 23, 42, 0.9);
+  color: #cbd5e1;
+  margin-bottom: 32px;
+  font-size: 0.95rem;
+}
+.summary-badge::before {
+  content: '\2728';
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+.photo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  cursor: zoom-in;
+}
+.photo-card::after {
+  content: 'Sanjay Kumar Vaishya - Professional Identity and Digital Service Expert';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 14px 18px;
+  background: rgba(15, 23, 42, 0.8);
+  color: #f8fafc;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  pointer-events: none;
+  z-index: 9;
+}
+.photo-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(139, 92, 246, 0.32);
+  box-shadow: 0 36px 90px rgba(59, 130, 246, 0.22);
+}
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  transition: transform 0.4s ease;
+}
+.photo-card:hover img {
+  transform: scale(1.04);
+}
+.photo-meta {
+  padding: 24px;
+}
+.photo-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #f8fafc;
+}
+.photo-desc {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: #cbd5e1;
+}
+.photo-tag {
+  display: inline-flex;
+  margin-top: 16px;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.83rem;
+  background: rgba(99, 102, 241, 0.12);
+  color: #c7d2fe;
+}
+.footer-note {
+  margin-top: 52px;
+  padding: 28px 30px;
+  border-radius: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(15, 23, 42, 0.75);
+  color: #cbd5e1;
+  line-height: 1.75;
+}
+@media (max-width: 1080px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+  .photo-card {
+    max-width: 100%;
+  }
+  .photo-meta {
+    padding: 22px;
+  }
+  .footer-note {
+    padding: 24px 22px;
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .header-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 0 12px;
+  }
+  .back-button {
+    width: 100%;
+    justify-content: center;
+  }
+  .theme-toggle-wrapper {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .theme-toggle-wrapper .switch {
+    margin-left: 0;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    padding: 28px 16px 60px;
+  }
+  .page-title {
+    font-size: 2.3rem;
+    max-width: 100%;
+  }
+  .page-subtitle {
+    font-size: 0.96rem;
+  }
+  .summary-badge {
+    font-size: 0.92rem;
+    padding: 0.75rem 0.96rem;
+  }
+}
+@media (max-width: 480px) {
+  .gallery-modal {
+    padding: 12px;
+  }
+  .gallery-modal-close {
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+  .photo-meta {
+    padding: 18px;
+  }
+  .photo-desc {
+    font-size: 0.95rem;
+  }
+  .photo-tag {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.75rem;
+  }
+}
+.gallery-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.94);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+.gallery-modal.open {
+  display: flex;
+}
+.gallery-modal-content {
+  position: relative;
+  max-width: 96vw;
+  max-height: 92vh;
+}
+.gallery-modal-image {
+  width: auto;
+  max-width: 100%;
+  max-height: 92vh;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+.gallery-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, opacity 0.3s ease, background 0.3s ease;
+}
+.gallery-modal-close:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+@media (max-width: 768px) {
+  .gallery-modal-content {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .gallery-modal-close {
+    top: 14px;
+    right: 14px;
+  }
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0.9rem 1.3rem;
+    min-width: 0;
+    width: auto;
+    max-width: 100%;
+    background: rgba(79, 70, 229, 0.16);
+    border: 1px solid rgba(79, 70, 229, 0.55);
+    color: #eff6ff;
+    text-decoration: none;
+    border-radius: 9999px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow: 0 14px 34px rgba(79, 70, 229, 0.16);
+    transition: transform 0.2s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.back-button:hover {
+    background: rgba(79, 70, 229, 0.27);
+    border-color: rgba(129, 140, 248, 0.8);
+    transform: translateY(-1px);
+    box-shadow: 0 18px 40px rgba(79, 70, 229, 0.2);
+}
+.back-button::before {
+    content: '←';
+    font-size: 1rem;
+}
+
+/* Page loader */
+.page-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, rgba(8,18,44,0.95) 0%, rgba(6,14,32,0.98) 65%, #060e20 100%);
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.page-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.page-loader .loader {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    perspective: 260px;
+}
+.page-loader .dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin: -60px 0 0 -60px;
+    border-radius: 9999px;
+    border: 18px solid transparent;
+    transform-origin: 50% 50%;
+    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    background-color: transparent;
+    animation: dot1 1200ms cubic-bezier(.49,.06,.43,.85) infinite;
+}
+.page-loader .dot:nth-child(2) {
+    width: 145px;
+    height: 145px;
+    margin: -72.5px 0 0 -72.5px;
+    border-width: 14px;
+    border-color: #447891;
+    animation-name: dot2;
+    animation-delay: 80ms;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+.page-loader .dot:nth-child(3) {
+    width: 170px;
+    height: 170px;
+    margin: -85px 0 0 -85px;
+    border-width: 10px;
+    border-color: #6bb2cd;
+    animation-name: dot3;
+    animation-delay: 160ms;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+@keyframes dot1 {
+    0% {
+        border-color: #1e3f57;
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+    50% {
+        border-color: #1e574f;
+        transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);
+    }
+    100% {
+        border-color: #1e3f57;
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+}
+@keyframes dot2 {
+    0% {
+        border-color: #447891;
+        box-shadow: inset 0 0 15px 0 rgba(255, 255, 255, 0.2);
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+    50% {
+        border-color: #449180;
+        box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.8);
+        transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);
+    }
+    100% {
+        border-color: #447891;
+        box-shadow: inset 0 0 15px 0 rgba(255, 255, 255, 0.2);
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+}
+@keyframes dot3 {
+    0% {
+        border-color: #6bb2cd;
+        box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+    50% {
+        border-color: #6bcdb2;
+        box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.8);
+        transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);
+    }
+    100% {
+        border-color: #6bb2cd;
+        box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+}
+</style>
+</head>
+<body><div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="header-row">
+    <button class="back-button" type="button" onclick="if (history.length > 1) { history.back(); } else { window.location.href = '/'; }">Go Back</button>
+    <div class="theme-toggle-wrapper">
+  <label class="switch" title="Toggle theme">
+    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+    <input id="theme-toggle" class="input" type="checkbox" aria-label="Toggle theme">
+    <span class="slider"></span>
+  </label>
+</div>
+  <div class="summary-badge">Sanjay Collections</div>
+  <h1 class="page-title">A curated photo gallery of Sanjay Kumar Vaishya</h1>
+  <p class="page-subtitle">Explore the best moments captured from personal life, travels, and professional scenes. Each photo is shown clearly with a simple title and image description.</p>
+
+  <section class="gallery-grid">
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay%20kumar%20vaishya%20hero%20image.png" alt="Sanjay Kumar Vaishya hero image in vibrant natural light">
+      <div class="photo-meta">
+        <h2 class="photo-title">Hero Image with Personal Strength</h2>
+        <p class="photo-desc">A polished personal branding portrait capturing Sanjay's confident and authentic presence. Ideal for personal branding, leadership, and digital service expertise.</p>
+        <span class="photo-tag">Personal Brand</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Active%20Lifestyle%20and%20Growth%20Journey.jpg" alt="Sanjay Kumar Vaishya active lifestyle and growth journey photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">Active Lifestyle & Growth Journey</h2>
+        <p class="photo-desc">A dynamic lifestyle image that reflects energy, progress, and an inspiring growth mindset. Best for active lifestyle, ambition, and personal growth.</p>
+        <span class="photo-tag">Lifestyle</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Confidence%2C%20Freedom%20and%20Growth%20Mindset.jpg" alt="Sanjay Kumar Vaishya confidence freedom and growth mindset photograph">
+      <div class="photo-meta">
+        <h2 class="photo-title">Confidence, Freedom & Growth Mindset</h2>
+        <p class="photo-desc">A strong visual story of self-belief, independence, and an open attitude toward future success. Great for confidence, freedom, and growth mindset.</p>
+        <span class="photo-tag">Mindset</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Confidence%2C%20Identity%20and%20Self%20Belief.jpg" alt="Sanjay Kumar Vaishya confidence identity and self belief portrait">
+      <div class="photo-meta">
+        <h2 class="photo-title">Confidence, Identity & Self Belief</h2>
+        <p class="photo-desc">A portrait that celebrates authenticity, inner strength, and a clear personal identity. Strong for keywords around identity, self belief, and trusted personal branding.</p>
+        <span class="photo-tag">Authenticity</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Confidence%2C%20Simplicity%20and%20Real%20Life%20Personality.jpg" alt="Sanjay Kumar Vaishya confidence simplicity and real life personality picture">
+      <div class="photo-meta">
+        <h2 class="photo-title">Simplicity, Confidence & Real Personality</h2>
+        <p class="photo-desc">A candid photo blending simplicity with natural confidence and a welcoming expression. Ideal for honest personality, simplicity, and real-life visuals.</p>
+        <span class="photo-tag">Real Life</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Discipline%2C%20Learning%20and%20Professional%20Presence.jpg" alt="Sanjay Kumar Vaishya discipline learning and professional presence photograph">
+      <div class="photo-meta">
+        <h2 class="photo-title">Discipline, Learning & Professional Presence</h2>
+        <p class="photo-desc">A focused frame showing Sanjay as a disciplined professional who values continued learning. Excellent for discipline, skill development, and career growth.</p>
+        <span class="photo-tag">Professional</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Focused%20Mindset%20and%20Professional%20Lifestyle.jpg" alt="Sanjay Kumar Vaishya focused mindset and professional lifestyle photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">Focused Mindset & Professional Lifestyle</h2>
+        <p class="photo-desc">An image that communicates clarity, ambition, and disciplined professional energy. Great for productivity, business lifestyle, and professional success.</p>
+        <span class="photo-tag">Goals</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Friendship%2C%20Real%20Connections%20and%20Life%20Moments.jpg" alt="Sanjay Kumar Vaishya friendship real connections and life moments photography">
+      <div class="photo-meta">
+        <h2 class="photo-title">Friendship, Real Connections & Life Moments</h2>
+        <p class="photo-desc">A warm scene capturing friendship, shared energy, and memorable real-life moments. Perfect for friendships, connection, and social energy.</p>
+        <span class="photo-tag">Friends</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Leadership%2C%20Guidance%20and%20Community%20Support.jpg" alt="Sanjay Kumar Vaishya leadership guidance and community support photograph">
+      <div class="photo-meta">
+        <h2 class="photo-title">Leadership, Guidance & Community Support</h2>
+        <p class="photo-desc">A thoughtful portrait that suggests mentorship, support, and trusted leadership. Strong for leadership, guidance, and community support.</p>
+        <span class="photo-tag">Leadership</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Life%20Balance%2C%20Energy%20and%20Real%20Moments.jpg" alt="Sanjay Kumar Vaishya life balance energy and real moments photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">Life Balance, Energy & Real Moments</h2>
+        <p class="photo-desc">A balanced lifestyle image showing energy, calm focus, and authentic living. Great for life balance, wellness, and modern lifestyle.</p>
+        <span class="photo-tag">Balance</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Simplicity%2C%20Dedication%20and%20Real%20Life%20Work.jpg" alt="Sanjay Kumar Vaishya simplicity dedication and real life work image">
+      <div class="photo-meta">
+        <h2 class="photo-title">Simplicity, Dedication & Real Work</h2>
+        <p class="photo-desc">A natural composition that highlights commitment, humble effort, and sincere work ethic. Best for dedication, real work, and professional consistency.</p>
+        <span class="photo-tag">Dedication</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/Sanjay%20Kumar%20Vaishya%20%E2%80%93%20Teamwork%2C%20Connections%20and%20Community%20Growth.jpg" alt="Sanjay Kumar Vaishya teamwork connections and community growth photograph">
+      <div class="photo-meta">
+        <h2 class="photo-title">Teamwork, Connections & Community Growth</h2>
+        <p class="photo-desc">A collaborative image portraying strong teamwork, care, and community-driven growth. Great for teamwork, community growth, and collective success.</p>
+        <span class="photo-tag">Community</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay-kumar-vaishya-family-photo-home.jpg.jpg" alt="Sanjay Kumar Vaishya family photo at home">
+      <div class="photo-meta">
+        <h2 class="photo-title">Family Photo at Home</h2>
+        <p class="photo-desc">A heartfelt family moment that gives warmth, authenticity, and personal connection. Useful for family life, emotional warmth, and authentic relationships.</p>
+        <span class="photo-tag">Family</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay-kumar-vaishya-friends-night-portrait.jpg.jpg" alt="Sanjay Kumar Vaishya friends night portrait image">
+      <div class="photo-meta">
+        <h2 class="photo-title">Friends Night Portrait</h2>
+        <p class="photo-desc">A powerful portrait capturing the energy and shared inspiration of a night out with friends. Ideal for friendship, night portrait, and social gatherings.</p>
+        <span class="photo-tag">Nightlife</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay-kumar-vaishya-friends-night-selfie.jpg.jpg" alt="Sanjay Kumar Vaishya friends night selfie photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">Friends Night Selfie</h2>
+        <p class="photo-desc">A relaxed, candid selfie that highlights friendship, spontaneity, and modern connections. Good for selfie photography, social culture, and youth energy.</p>
+        <span class="photo-tag">Selfie</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay-kumar-vaishya-railway-track-selfie-sunglasses.jpg.jpg" alt="Sanjay Kumar Vaishya railway track selfie with sunglasses photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">Railway Track Selfie with Sunglasses</h2>
+        <p class="photo-desc">A travel-inspired selfie capturing adventure, confidence, and an on-the-go personality. Strong for SEO terms like travel photo, adventure selfie, and bold journey imagery.</p>
+        <span class="photo-tag">Travel</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay-kumar-vaishya-village-selfie-friend.jpg.jpg" alt="Sanjay Kumar Vaishya village selfie with friend photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">Village Selfie with Friend</h2>
+        <p class="photo-desc">A grounded photo celebrating friendship, local roots, and the beauty of everyday village life. Great for rural lifestyle, community pride, and local culture.</p>
+        <span class="photo-tag">Roots</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay-vaishya-check-shirt-backpack-room.jpg.jpg" alt="Sanjay Vaishya check shirt backpack room photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">Check Shirt & Backpack Room Scene</h2>
+        <p class="photo-desc">A modern lifestyle capture blending practical travel readiness with a relaxed indoor mood. Best for style, travel prep, and everyday modern living.</p>
+        <span class="photo-tag">Style</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay-vaishya-closeup-selfie-orange-shirt.jpg.jpg" alt="Sanjay Vaishya closeup selfie orange shirt photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">Closeup Selfie in Orange Shirt</h2>
+        <p class="photo-desc">A bright and personal closeup that highlights charisma, confidence, and friendly warmth. Useful for portrait photography, personal charm, and expressive visuals.</p>
+        <span class="photo-tag">Portrait</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay-vaishya-school-classroom-friends.jpg.jpg" alt="Sanjay Vaishya school classroom friends photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">School Classroom Friends Photo</h2>
+        <p class="photo-desc">A nostalgic image that reflects learning, friendship, and the strength of early connections. Great for school memories, education, and childhood friends.</p>
+        <span class="photo-tag">Memory</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay-vaishya-white-shirt-indoor-portrait.jpg.jpg" alt="Sanjay Vaishya white shirt indoor portrait photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">White Shirt Indoor Portrait</h2>
+        <p class="photo-desc">A clean, elegant portrait that conveys professionalism, composure, and refined style. Ideal for polished branding, professional imagery, and confident presentation.</p>
+        <span class="photo-tag">Classic</span>
+      </div>
+    </article>
+
+    <article class="photo-card">
+      <img loading="lazy" src="../uploads/sanjay/sanjay-vaishya-with-baby-smile-photo.jpg.jpg" alt="Sanjay Vaishya with baby smile photo">
+      <div class="photo-meta">
+        <h2 class="photo-title">With Baby Smile Photo</h2>
+        <p class="photo-desc">A tender moment capturing warmth, joy, and the gentle side of life beyond work. Strong for family emotion, tender portraits, and heartfelt storytelling.</p>
+        <span class="photo-tag">Emotion</span>
+      </div>
+    </article>
+
+  </section>
+
+  <div class="footer-note">
+    This collection highlights the best uploaded photography for <strong>Sanjay Kumar Vaishya</strong>. Each image has been selected to present a strong, authentic, and professional story for branding, lifestyle, and relationships.</div>
+</div>
+
+<div class="gallery-modal" id="gallery-modal" aria-hidden="true">
+  <div class="gallery-modal-content">
+    <button class="gallery-modal-close" id="gallery-modal-close" aria-label="Close image view">&times;</button>
+    <img class="gallery-modal-image" id="gallery-modal-image" alt="">
+  </div>
+</div>
+
+<script>
+(function() {
+  const modal = document.getElementById('gallery-modal');
+  const modalImage = document.getElementById('gallery-modal-image');
+  const closeButton = document.getElementById('gallery-modal-close');
+
+  function openModal(src, alt) {
+    modalImage.src = src;
+    modalImage.alt = alt || 'Photo view';
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  closeButton.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', function(event) {
+    if (event.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') closeModal();
+  });
+
+  document.querySelectorAll('.photo-card img').forEach(function(img) {
+    img.addEventListener('click', function() {
+      openModal(this.src, this.alt);
+    });
+  });
+})();
+</script>
+
+<script>
+(function() {
+  function hidePageLoader() {
+    var loader = document.getElementById("page-loader");
+    if (!loader) return;
+    loader.classList.add("hidden");
+    window.setTimeout(function() {
+      if (loader.parentNode) {
+        loader.parentNode.removeChild(loader);
+      }
+    }, 400);
+  }
+  window.addEventListener("load", hidePageLoader);
+})();
+</script>
+<script>
+(function(){
+  function applyTheme(theme) {
+    var html = document.documentElement;
+    if (theme === "light") {
+      html.classList.add("light");
+      html.classList.remove("dark");
+    } else {
+      html.classList.remove("light");
+      html.classList.add("dark");
+    }
+    var toggle = document.getElementById("theme-toggle");
+    if (toggle) {
+      toggle.checked = theme === "light";
+    }
+  }
+  function initTheme() {
+    var stored = localStorage.getItem("site-theme");
+    var theme = "dark";
+    if (stored === "light" || stored === "dark") {
+      theme = stored;
+    }
+    applyTheme(theme);
+    var toggle = document.getElementById("theme-toggle");
+    if (toggle) {
+      toggle.checked = theme === "light";
+      toggle.addEventListener("change", function () {
+        var next = this.checked ? "light" : "dark";
+        localStorage.setItem("site-theme", next);
+        applyTheme(next);
+      });
+    }
+  }
+  window.addEventListener("DOMContentLoaded", initTheme);
+})();
+</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

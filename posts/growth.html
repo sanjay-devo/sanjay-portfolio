@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 🔥 SEO -->
+
+<title>Sanjay Kumar Vaishya - Active Lifestyle and Growth Journey</title>
+<meta name="description" content="A glimpse of Sanjay Kumar Vaishya's active lifestyle, journey, and dedication towards personal and professional growth.">
+<meta name="keywords" content="Sanjay Vaishya, Personal Branding India, Digital Entrepreneur, Growth Journey, Cyber Cafe Owner">
+
+<meta property="og:image" content="https://indiacybercafe.com/wp-content/uploads/2026/03/sanjay-vaishya-19-scaled.jpg">
+
+<!-- FONT -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel='icon' type='image/png' href='https://indiacybercafe.com/wp-content/uploads/2026/03/sanjay_siteicon.png'/>
+<link rel='apple-touch-icon' href='https://indiacybercafe.com/wp-content/uploads/2026/03/sanjay_siteicon.png'/>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}/* Theme toggle */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(148, 163, 184, 0.35);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 999px;
+  left: 2px;
+  bottom: 2px;
+  z-index: 2;
+  background-color: #ffffff;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.18);
+}
+
+.sun svg,
+.moon svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.sun svg {
+  top: 6px;
+  left: 36px;
+  opacity: 0.75;
+}
+
+.moon svg {
+  top: 6px;
+  left: 6px;
+  opacity: 0.75;
+  fill: #facc15;
+}
+
+.switch:hover .sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+.switch:hover .moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.input:checked + .slider {
+  background-color: rgba(59, 130, 246, 0.9);
+}
+
+.input:focus + .slider {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.input:checked + .slider:before {
+  transform: translateX(30px);
+  background-color: #f8fafc;
+}
+
+html.light .slider {
+  background-color: rgba(148, 163, 184, 0.25);
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+html.light .input:checked + .slider {
+  background-color: rgba(59, 130, 246, 0.9);
+}
+
+html.light .slider:before {
+  background-color: #ffffff;
+}
+
+html.light body {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+html.light .card {
+  background: rgba(255, 255, 255, 0.94) !important;
+  box-shadow: 0 24px 80px rgba(148, 163, 184, 0.15) !important;
+}
+
+html.light .content,
+html.light h1,
+html.light h2,
+html.light h3,
+html.light p,
+html.light li,
+html.light a {
+  color: #0f172a !important;
+}
+
+html.light a {
+  color: #1d4ed8 !important;
+  text-decoration: underline !important;
+}
+
+html.light .faq-question {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+html.light .faq-item.active .faq-question {
+  background: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+html.light .faq-answer {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+html.dark body {
+  background: radial-gradient(circle at top, #0b132b, #020617) !important;
+  color: #e2e8f0 !important;
+}
+
+html.dark .card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5) !important;
+}
+
+html.dark .content,
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark p,
+html.dark li,
+html.dark a {
+  color: #cbd5f5 !important;
+}
+
+html.dark a {
+  color: #60a5fa !important;
+  text-decoration: none !important;
+}
+
+.theme-toggle-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  min-height: 56px;
+  padding: 0;
+}
+
+.header-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 0 16px;
+  min-height: 56px;
+}
+
+.header-row > button,
+.header-row > .theme-toggle-wrapper {
+  min-height: 56px;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:radial-gradient(circle at top,#0b132b,#020617);
+  color:#e2e8f0;
+}
+
+/* CONTAINER */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(20px);
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.5);
+  animation:fadeUp 1s ease;
+}
+
+/* TITLE */
+.title{
+  font-size:2.2rem;
+  font-weight:800;
+  background:linear-gradient(90deg,#60a5fa,#c084fc);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  margin-bottom:15px;
+}
+
+/* IMAGE */
+.image{
+  width:100%;
+  border-radius:15px;
+  margin:25px 0;
+  transition:0.4s;
+}
+.image:hover{
+  transform:scale(1.03);
+}
+
+/* TEXT */
+.content{
+  line-height:1.8;
+  font-size:1.05rem;
+  color:#cbd5f5;
+}
+
+/* LIST */
+ul{
+  margin:20px 0;
+  padding-left:20px;
+}
+li{margin-bottom:10px;}
+
+/* CTA */
+.cta{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:linear-gradient(135deg,#6366f1,#8b5cf6);
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+@media(max-width:768px){
+  .title{font-size:1.6rem;}
+}  .back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 0.95rem 1.5rem;
+    background: rgba(79, 70, 229, 0.16);
+    border: 1px solid rgba(79, 70, 229, 0.55);
+    color: #eff6ff;
+    text-decoration: none;
+    border-radius: 9999px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow: 0 18px 45px rgba(79, 70, 229, 0.18);
+    transition: transform 0.2s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .back-button:hover {
+    background: rgba(79, 70, 229, 0.27);
+    border-color: rgba(129, 140, 248, 0.8);
+    transform: translateY(-1px);
+    box-shadow: 0 22px 50px rgba(79, 70, 229, 0.25);
+  }
+  .back-button::before {
+    content: '←';
+    font-size: 1rem;
+  }\n</style>
+
+</head>
+
+<body>
+
+<div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</div>
+
+
+<div class="container"><div class="card"><div class="header-row"><div class="theme-toggle-wrapper">
+  <label class="switch" title="Toggle theme">
+    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+    <input id="theme-toggle" class="input" type="checkbox" aria-label="Toggle theme">
+    <span class="slider"></span>
+  </label>
+</div>
+
+<button
+  type="button"
+  style="all: unset; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; background-color: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); color: #000000; font-size: 16px; font-weight: 600; cursor: pointer; font-family: sans-serif; border-radius: 12px; min-height: 56px; width: auto; min-width: auto; text-decoration: none; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);"
+ 
+ 
+  onclick="if (history.length > 1) { history.back(); } else { window.location.href = '/'; }"
+>
+  <div style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 9999px; background-color: #4ade80; flex-shrink: 0;">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1024 1024"
+      height="25px"
+      width="25px"
+    >
+      <path
+        d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+        fill="#000000"
+      ></path>
+      <path
+        d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+        fill="#000000"
+      ></path>
+    </svg>
+  </div>
+  <p style="margin: 0; line-height: 1;">Go Back</p>
+</button>  </div>
+
+
+<h1 class="title">Sanjay Kumar Vaishya - Active Lifestyle and Growth Journey</h1>
+
+<img src="https://indiacybercafe.com/wp-content/uploads/2026/03/sanjay-vaishya-19-scaled.jpg"
+alt="Sanjay Kumar Vaishya outdoor photo with cap and bag showing active lifestyle"
+class="image">
+
+<div class="content">
+
+<p>This image represents an active and dynamic moment in the life of <strong>Sanjay Kumar Vaishya</strong>. It reflects his journey, movement, and dedication towards continuous growth.</p>
+
+<p>Whether it is personal development or professional work, success comes from consistency and effort. This photo shows a person who is always ready to move forward, learn, and improve.</p>
+
+<p>His work at India Cyber Cafe is also driven by this same mindset - providing fast, reliable, and helpful digital services to people.</p>
+
+<h3>What This Image Represents</h3>
+<ul>
+<li>Active and hardworking lifestyle</li>
+<li>Continuous learning and growth</li>
+<li>Confidence and self-discipline</li>
+</ul>
+
+<h3>Services Provided</h3>
+<ul>
+<li>Online Form Filling</li>
+<li>Aadhaar & PAN Services</li>
+<li>Government Applications</li>
+<li>Digital Assistance</li>
+</ul>
+
+<a href="https://wa.me/919203251821" class="cta">Contact on WhatsApp</a>
+
+</div>
+
+</div>
+</div>
+
+<script>
+(function() {
+  function hidePageLoader() {
+    var loader = document.getElementById('page-loader');
+    if (!loader) return;
+    loader.classList.add('hidden');
+    window.setTimeout(function() {
+      if (loader.parentNode) {
+        loader.parentNode.removeChild(loader);
+      }
+    }, 400);
+  }
+  window.addEventListener('load', hidePageLoader);
+})();
+</script>
+<script>
+(function(){
+  function applyTheme(theme) {
+    var html = document.documentElement;
+    if (theme === "light") {
+      html.classList.add("light");
+      html.classList.remove("dark");
+    } else {
+      html.classList.remove("light");
+      html.classList.add("dark");
+    }
+    var toggle = document.getElementById("theme-toggle");
+    if (toggle) {
+      toggle.checked = theme === "light";
+    }
+  }
+  function initTheme() {
+    var stored = localStorage.getItem("site-theme");
+    var theme = "dark";
+    if (stored === "light" || stored === "dark") {
+      theme = stored;
+    }
+    applyTheme(theme);
+    var toggle = document.getElementById("theme-toggle");
+    if (toggle) {
+      toggle.checked = theme === "light";
+      toggle.addEventListener("change", function () {
+        var next = this.checked ? "light" : "dark";
+        localStorage.setItem("site-theme", next);
+        applyTheme(next);
+      });
+    }
+  }
+  window.addEventListener("DOMContentLoaded", initTheme);
+})();
+</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
