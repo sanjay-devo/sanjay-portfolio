@@ -40,7 +40,7 @@ SANJAY-PORTFOLIO/
 
 ## 👨‍💻 About  
 
-![Developer](https://images.unsplash.com/photo-1605379399642-870262d3d051)
+![Developer](https://indiacybercafe.com/wp-content/uploads/2026/04/sanjay_vaishya_splash_screen.jpg)
 
 This project is a **modern personal portfolio + digital service platform** designed to:
 
