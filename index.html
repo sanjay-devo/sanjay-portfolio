@@ -2620,7 +2620,7 @@
     <div>
       <h3 class="text-3xl font-black">Contact Form</h3>
     </div>
-    <form id="contact-form" class="space-y-6" novalidate>
+    <form id="contact-form" action="api/contact.php" method="post" class="space-y-6" novalidate>
       <div class="space-y-2">
         <label class="block text-sm font-bold" for="contact-name">Full Name</label>
         <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="John Doe" class="px-5 py-4 text-sm" />
@@ -2633,7 +2633,8 @@
         <label class="block text-sm font-bold" for="contact-message">Your Message</label>
         <textarea id="contact-message" name="message" placeholder="How can I help you today?" class="px-5 py-4 text-sm"></textarea>
       </div>
-      <button class="contact-form-submit px-5 py-4 text-sm" type="button">Request a Call</button>
+      <button class="contact-form-submit px-5 py-4 text-sm" type="submit">Request a Call</button>
+      <div id="contact-feedback" class="hidden rounded-xl p-4 text-sm font-bold" role="status" aria-live="polite"></div>
     </form>
   </div>
 </div>
@@ -3494,7 +3495,7 @@
     }
 
     function initContactForm() {
-        var form = document.querySelector('form[action="./site.php"]');
+      var form = document.getElementById('contact-form');
         if (!form) {
             return;
         }
@@ -3554,7 +3555,7 @@
             .then(function (data) {
                 if (!data || typeof data !== 'object') {
                     showContactFeedback('error', 'Server returned unexpected response.');
-                } else if (data.status === 'success') {
+                } else if (data.success === true) {
                     showContactFeedback('success', data.message || 'Your message has been sent successfully.');
                     form.reset();
                 } else {

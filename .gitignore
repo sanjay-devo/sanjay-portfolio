@@ -1,0 +1,14 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+api/config.php
+
+# Runtime logs
+logs/
+*.log
+
+# Local editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
