@@ -201,6 +201,72 @@
         .contact-card .text-2xl {
             font-size: 1.375rem;
         }
+        .contact-form-shell {
+          --contact-form-bg: rgba(14, 26, 55, 0.72);
+          --contact-form-border: rgba(133, 173, 255, 0.24);
+          --contact-form-label: #dee5ff;
+          --contact-form-input-bg: rgba(255, 255, 255, 0.96);
+          --contact-form-input-text: #17213a;
+          --contact-form-placeholder: #71809d;
+          --contact-form-accent: #85adff;
+          background: var(--contact-form-bg);
+          border: 1px solid var(--contact-form-border);
+          box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+        }
+        .contact-form-shell label {
+          color: var(--contact-form-label);
+        }
+        .contact-form-shell input,
+        .contact-form-shell textarea {
+          width: 100%;
+          border: 1px solid transparent;
+          border-radius: 0.8rem;
+          background: var(--contact-form-input-bg);
+          color: var(--contact-form-input-text);
+          caret-color: var(--contact-form-input-text);
+          transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+        }
+        .contact-form-shell input::placeholder,
+        .contact-form-shell textarea::placeholder {
+          color: var(--contact-form-placeholder);
+          opacity: 1;
+        }
+        .contact-form-shell input:focus,
+        .contact-form-shell textarea:focus {
+          border-color: var(--contact-form-accent);
+          box-shadow: 0 0 0 3px rgba(133, 173, 255, 0.2);
+          outline: none;
+          transform: translateY(-1px);
+        }
+        .contact-form-shell textarea {
+          min-height: 132px;
+          resize: vertical;
+        }
+        .contact-form-submit {
+          width: 100%;
+          border: 0;
+          border-radius: 0.8rem;
+          background: linear-gradient(135deg, #85adff, #6e9fff);
+          color: #091328;
+          font-weight: 800;
+          letter-spacing: 0.04em;
+          transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+        }
+        .contact-form-submit:hover {
+          filter: brightness(1.06);
+          box-shadow: 0 12px 28px rgba(110, 159, 255, 0.24);
+          transform: translateY(-2px);
+        }
+        html.light .contact-form-shell {
+          --contact-form-bg: rgba(239, 246, 255, 0.96);
+          --contact-form-border: rgba(148, 163, 184, 0.45);
+          --contact-form-label: #0f172a;
+          --contact-form-input-bg: #ffffff;
+          --contact-form-input-text: #17213a;
+          --contact-form-placeholder: #71809d;
+          --contact-form-accent: #5b8def;
+          box-shadow: 0 24px 60px rgba(148, 163, 184, 0.2);
+        }
         .card:hover {
             box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
         }
@@ -2549,14 +2615,26 @@
   </div>
 </div>
 </div>
-<div class="bg-surface-container rounded-3xl overflow-hidden border border-outline-variant/10 shadow-2xl">
+<div class="contact-form-shell rounded-3xl overflow-hidden">
   <div class="p-8 space-y-6">
     <div>
       <h3 class="text-3xl font-black">Contact Form</h3>
     </div>
-  </div>
-  <div class="w-full h-[320px] sm:h-[415px] bg-[#0b1530]">
-    <iframe src="https://rs.dukans.in/sanjay-contact/" class="w-full h-full" loading="lazy" title="Sanjay Contact Form"></iframe>
+    <form id="contact-form" class="space-y-6" novalidate>
+      <div class="space-y-2">
+        <label class="block text-sm font-bold" for="contact-name">Full Name</label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="John Doe" class="px-5 py-4 text-sm" />
+      </div>
+      <div class="space-y-2">
+        <label class="block text-sm font-bold" for="contact-phone">Mobile Number</label>
+        <input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 92032 51821" class="px-5 py-4 text-sm" />
+      </div>
+      <div class="space-y-2">
+        <label class="block text-sm font-bold" for="contact-message">Your Message</label>
+        <textarea id="contact-message" name="message" placeholder="How can I help you today?" class="px-5 py-4 text-sm"></textarea>
+      </div>
+      <button class="contact-form-submit px-5 py-4 text-sm" type="button">Request a Call</button>
+    </form>
   </div>
 </div>
 </div>
