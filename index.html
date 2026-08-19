@@ -3,18 +3,18 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta name="description" content="Sanjay Vaishya - Full Stack Developer specializing in web applications, PHP, Laravel, JavaScript, and digital services. India Cyber Cafe founder."/>
-<meta name="keywords" content="Full Stack Developer, Web Developer, PHP Developer, Laravel, JavaScript, Web Design, India Cyber Cafe, Digital Services, PAN Card Services"/>
+<meta name="description" content="Sanjay Vaishya - Full Stack Developer specializing in web applications, PHP, Laravel, JavaScript, Android app development, and digital services. India Cyber Cafe founder."/>
+<meta name="keywords" content="Full Stack Developer, Web Developer, PHP Developer, Laravel, JavaScript, Android App Developer, Web Design, India Cyber Cafe, Digital Services, PAN Card Services"/>
 <meta name="author" content="Sanjay Vaishya"/>
 <meta name="theme-color" content="#060e20"/>
 <meta property="og:title" content="Sanjay Vaishya | Full Stack Developer & Digital Innovator"/>
-<meta property="og:description" content="Professional Full Stack Developer with expertise in web applications, digital services, and enterprise solutions."/>
+<meta property="og:description" content="Professional Full Stack Developer with expertise in web applications, Android app development, digital services, and enterprise solutions."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://sanjayvaishya.com"/>
 <meta property="og:image" content="https://indiacybercafe.com/wp-content/uploads/2026/03/sanjay_siteicon.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Sanjay Vaishya | Full Stack Developer"/>
-<meta name="twitter:description" content="Professional Full Stack Developer with expertise in web applications and digital services."/>
+<meta name="twitter:description" content="Professional Full Stack Developer with expertise in web applications, Android app development, and digital services."/>
 <meta name="twitter:image" content="https://indiacybercafe.com/wp-content/uploads/2026/03/sanjay_siteicon.png"/>
 <link rel="canonical" href="https://sanjayvaishya.com"/>
 <title>Sanjay Vaishya | Full Stack Developer & Digital Expert</title>
@@ -40,9 +40,33 @@
   "sameAs": [
     "https://x.com/Sanjayvaishya_",
     "https://www.facebook.com/share/1Dy834tjnm",
-    "https://www.instagram.com/sanjayvaishya_"
+    "https://www.instagram.com/sanjayvaishya_",
+    "https://play.google.com/store/apps/details?id=com.sanjay.app"
   ],
-  "knowsAbout": ["PHP", "Laravel", "JavaScript", "HTML5", "CSS3", "Web Development", "UI Design", "API Integration"]
+  "knowsAbout": ["PHP", "Laravel", "JavaScript", "HTML5", "CSS3", "Web Development", "Android App Development", "UI Design", "API Integration"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Android app by Sanjay Vaishya",
+  "operatingSystem": "Android",
+  "applicationCategory": "UtilitiesApplication",
+  "url": "https://play.google.com/store/apps/details?id=com.sanjay.app",
+  "author": {"@type": "Person", "name": "Sanjay Vaishya", "url": "https://sanjayvaishya.com"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is the Android app by Sanjay Vaishya?","acceptedAnswer":{"@type":"Answer","text":"It is an Android app published by Sanjay Vaishya. Visit its Google Play listing for the current app description and details."}},
+    {"@type":"Question","name":"Where can I download the Android app?","acceptedAnswer":{"@type":"Answer","text":"You can download the app from its Google Play listing: https://play.google.com/store/apps/details?id=com.sanjay.app"}},
+    {"@type":"Question","name":"How do I install the app?","acceptedAnswer":{"@type":"Answer","text":"Open the Google Play listing on an Android device, select Install, and follow the on-screen steps."}},
+    {"@type":"Question","name":"How can I contact the app developer for support?","acceptedAnswer":{"@type":"Answer","text":"You can email sanjayvaishya.dev@gmail.com or call +91 9203251821 for support."}}
+  ]
 }
 </script>
 <script id="tailwind-config">
@@ -256,6 +280,16 @@
         .button2:hover {
           color: #ffffff;
           border-color: #85adff;
+        }
+
+        .app-play-button {
+          color: #dee5ff !important;
+        }
+
+        html.light .app-play-button {
+          background: #1d4ed8 !important;
+          border-color: #1d4ed8 !important;
+          color: #ffffff !important;
         }
 
         .button2:hover:before {
@@ -2109,6 +2143,10 @@
   </svg>
   <span>View Projects</span>
 </button>
+<a href="https://play.google.com/store/apps/details?id=com.sanjay.app" class="app-play-button inline-flex items-center gap-2 rounded-xl border border-[#85adff]/40 bg-[#101d3a] px-4 py-3 text-sm font-bold text-[#dee5ff] shadow-lg transition hover:-translate-y-1 hover:border-[#85adff] hover:bg-[#182b52]" target="_blank" rel="noopener noreferrer" aria-label="Get the Android app on Google Play">
+  <span class="material-symbols-outlined text-lg text-[#85adff]" aria-hidden="true">android</span>
+  <span>Get it on Google Play</span>
+</a>
 </div>
 </div>
 <div class="relative hidden lg:block">
@@ -2521,6 +2559,22 @@
     <iframe src="https://rs.dukans.in/sanjay-contact/" class="w-full h-full" loading="lazy" title="Sanjay Contact Form"></iframe>
   </div>
 </div>
+</div>
+</div>
+</section>
+<!-- App FAQ Section -->
+<section class="py-24 bg-surface-container-low" id="faq">
+<div class="container mx-auto px-6 max-w-5xl">
+<div class="mb-16 text-center">
+<span class="text-xs font-label uppercase tracking-[0.3em] text-primary font-bold">Android App FAQ</span>
+<h2 class="text-4xl font-black mt-4">App Questions, Answered</h2>
+<p class="text-on-surface-variant mt-4">Helpful details about the app, Google Play, updates, and support.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-4">
+<details class="group rounded-2xl border border-outline-variant/20 bg-surface-container p-5" open><summary class="cursor-pointer list-none pr-6 font-bold">What is the Android app by Sanjay Vaishya?</summary><p class="mt-3 text-sm leading-relaxed text-on-surface-variant">It is an Android app published by Sanjay Vaishya. Visit its Google Play listing for the current app description and details.</p></details>
+<details class="group rounded-2xl border border-outline-variant/20 bg-surface-container p-5"><summary class="cursor-pointer list-none pr-6 font-bold">Where can I download the Android app?</summary><p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Download it from the <a class="text-primary underline" href="https://play.google.com/store/apps/details?id=com.sanjay.app" target="_blank" rel="noopener noreferrer">Google Play listing</a>.</p></details>
+<details class="group rounded-2xl border border-outline-variant/20 bg-surface-container p-5"><summary class="cursor-pointer list-none pr-6 font-bold">How do I install the app?</summary><p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Open the Google Play listing on an Android device, select Install, and follow the on-screen steps.</p></details>
+<details class="group rounded-2xl border border-outline-variant/20 bg-surface-container p-5"><summary class="cursor-pointer list-none pr-6 font-bold">How can I contact the app developer for support?</summary><p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Email <a class="text-primary underline" href="mailto:sanjayvaishya.dev@gmail.com">sanjayvaishya.dev@gmail.com</a> or call <a class="text-primary underline" href="tel:+919203251821">+91 9203251821</a>.</p></details>
 </div>
 </div>
 </section>
