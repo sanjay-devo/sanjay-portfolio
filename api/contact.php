@@ -82,12 +82,59 @@ try {
     $mail->Subject = 'New portfolio contact request from ' . $name;
     $mail->isHTML(true);
     $mail->Body = <<<HTML
-<div style="font-family:Arial,sans-serif;line-height:1.6;color:#17213a;max-width:640px;">
-  <h2 style="color:#1d4ed8;">New Contact Request</h2>
-  <p><strong>Full Name:</strong> {$safeName}</p>
-  <p><strong>Mobile Number:</strong> {$safePhone}</p>
-  <p><strong>Message:</strong><br>{$safeMessage}</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New contact request</title>
+</head>
+<body style="margin:0;padding:24px 12px;background:#eef3fb;color:#17213a;font-family:Arial,Helvetica,sans-serif;">
+    <div style="display:none;max-height:0;overflow:hidden;opacity:0;">New contact request from {$safeName}.</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:680px;margin:0 auto;">
+        <tr>
+            <td style="padding:0;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;background:#ffffff;border:1px solid #d8e2f0;border-radius:20px;overflow:hidden;box-shadow:0 12px 32px rgba(36,61,98,0.12);">
+                    <tr>
+                        <td style="padding:28px 30px;background:#101d3a;">
+                            <div style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#a9c4ff;font-weight:700;">Sanjay Vaishya</div>
+                            <div style="margin-top:8px;font-size:26px;line-height:1.2;color:#ffffff;font-weight:700;">New contact request</div>
+                            <div style="margin-top:14px;display:inline-block;padding:7px 12px;border:1px solid rgba(169,196,255,0.35);border-radius:999px;color:#dce8ff;font-size:12px;font-weight:700;">READY FOR REVIEW</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:30px;">
+                            <div style="margin-bottom:18px;color:#60708d;font-size:13px;line-height:1.5;">Someone submitted the contact form on your portfolio website.</div>
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0;background:#f5f8fd;border:1px solid #e1e9f4;border-radius:14px;">
+                                <tr>
+                                    <td style="padding:16px 18px;border-bottom:1px solid #e1e9f4;width:34%;color:#71809d;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;">Full name</td>
+                                    <td style="padding:16px 18px;border-bottom:1px solid #e1e9f4;color:#17213a;font-size:15px;font-weight:700;">{$safeName}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:16px 18px;color:#71809d;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;">Mobile number</td>
+                                    <td style="padding:16px 18px;color:#17213a;font-size:15px;font-weight:700;">{$safePhone}</td>
+                                </tr>
+                            </table>
+                            <div style="margin-top:26px;margin-bottom:10px;color:#17213a;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Message</div>
+                            <div style="padding:18px 20px;background:#f8fbff;border-left:4px solid #6e9fff;border-radius:10px;color:#344563;font-size:15px;line-height:1.7;">{$safeMessage}</div>
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:28px;">
+                                <tr>
+                                    <td style="border-radius:10px;background:#1d4ed8;text-align:center;">
+                                        <a href="tel:+919203251821" style="display:inline-block;padding:13px 20px;color:#ffffff;text-decoration:none;font-size:14px;font-weight:700;">Call Sanjay</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:18px 30px;background:#f5f8fd;border-top:1px solid #e1e9f4;color:#71809d;font-size:12px;line-height:1.6;">This message was sent from the contact form on sanjayvaishya.com.</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
 HTML;
     $mail->AltBody = "New contact request\n\nFull Name: {$name}\nMobile Number: {$phone}\nMessage:\n{$message}";
     $mail->send();
